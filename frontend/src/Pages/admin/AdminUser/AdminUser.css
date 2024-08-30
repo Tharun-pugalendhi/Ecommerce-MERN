@@ -1,0 +1,125 @@
+.admin-user {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f7efe5;
+}
+
+.admin-user table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-user th,
+.admin-user td {
+  padding: 12px 15px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.admin-user th {
+  /* background: linear-gradient(
+    60deg,
+    rgba(226, 236, 178, 1) 0%,
+    rgba(38, 202, 82, 1) 100%
+  ); */
+  background: #c8a1e0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.admin-user td {
+  background-color: #f9f9f9;
+}
+
+.admin-user tr:nth-child(even) td {
+  background-color: #f7efe5;
+}
+
+.admin-user tr:hover td {
+  background-color: #d1e7dd;
+}
+
+/* Rounded corners for the first and last columns */
+.admin-user table th:first-child,
+.admin-user table td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.admin-user table th:last-child,
+.admin-user table td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Sticky header for better visibility */
+.admin-user table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Center align table content */
+.admin-user table th,
+.admin-user table td {
+  text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .admin-user table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border: 0;
+  }
+
+  .admin-user thead {
+    display: none;
+  }
+
+  .admin-user tbody,
+  .admin-user tr {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .admin-user td {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    box-sizing: border-box;
+  }
+
+  .admin-user td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #e9ecef;
+    box-sizing: border-box;
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  .admin-user td {
+    padding-left: 60%;
+  }
+
+  .admin-user td::before {
+    width: 60%;
+  }
+}

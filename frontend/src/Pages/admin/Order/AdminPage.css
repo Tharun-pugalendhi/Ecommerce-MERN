@@ -1,0 +1,223 @@
+.admin-dashboard {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  color: #674188;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Overall totals section */
+.overall-totals {
+  text-align: center;
+  background: #e2bfd9;
+  /* background: linear-gradient(
+    60deg,
+    rgba(226, 236, 178, 1) 0%,
+    rgba(38, 202, 82, 1) 100%
+  ); */
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.overall-totals h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e2bfd9;
+  padding-bottom: 5px;
+}
+
+.overall-totals p {
+  font-size: 1.25em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Dashboard sections */
+.dashboard-section {
+  margin-bottom: 40px;
+}
+
+.dashboard-section h2 {
+  font-size: 1.75em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e2bfd9;
+  padding-bottom: 5px;
+}
+
+.dashboard-section h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Day section */
+.day-section {
+  border: 4px solid #e2bfd9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.day-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-totals {
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background: #c8a1e0;
+  /* background: linear-gradient(
+    60deg,
+    rgba(226, 236, 178, 1) 0%,
+    rgba(38, 202, 82, 1) 100%
+  ); */
+}
+
+.day-totals p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Interval section */
+.interval-section {
+  margin-bottom: 20px;
+}
+
+/* Table styles */
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard thead th {
+  background-color: #674188;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+.admin-dashboard tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-dashboard tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Image styles */
+.admin-dashboard img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.admin-dashboard .no-image {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .admin-dashboard h1 {
+    font-size: 2em;
+  }
+
+  .dashboard-section h2 {
+    font-size: 1.5em;
+  }
+
+  .dashboard-section h3 {
+    font-size: 1.25em;
+  }
+
+  .day-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overall-totals {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-dashboard table {
+    font-size: 0.9em;
+  }
+
+  .admin-dashboard table th,
+  .admin-dashboard table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .admin-dashboard h1 {
+    font-size: 1.75em;
+  }
+
+  .dashboard-section h2 {
+    font-size: 1.25em;
+  }
+
+  .dashboard-section h3 {
+    font-size: 1em;
+  }
+
+  .day-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overall-totals {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-dashboard table {
+    font-size: 0.8em;
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+    display: block; /* Makes the table behave like a block element */
+  }
+
+  .admin-dashboard thead,
+  .admin-dashboard tbody {
+    display: block;
+  }
+
+  .admin-dashboard tbody {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto; /* Allows vertical scrolling */
+  }
+}

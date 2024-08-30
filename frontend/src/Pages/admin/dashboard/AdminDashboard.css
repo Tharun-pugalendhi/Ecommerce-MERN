@@ -1,0 +1,49 @@
+.admin-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f7efe5;
+}
+
+.dashboard-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  margin-top: 20px;
+}
+
+.stat-card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 10px; /* Adjust margin to handle wrapping items */
+  flex: 1 1 calc(33.333% - 20px); /* Flexible width for larger screens */
+  max-width: calc(33.333% - 20px); /* Ensure max width is within bounds */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.stat-card p {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .stat-card {
+    flex: 1 1 calc(45% - 20px); /* Adjust width for tablets and smaller desktops */
+    max-width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    flex: 1 1 calc(100% - 20px); /* Full width for smaller screens */
+    max-width: calc(100% - 20px);
+  }
+}

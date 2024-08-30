@@ -1,0 +1,221 @@
+/* Large Header Section */
+.large-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+/* Header and Canvas Animation */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Large Header Section */
+#large-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Canvas Wrapper Styles */
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Center vertically */
+  overflow: hidden;
+}
+
+/* Flex Center Class */
+.flexCenter {
+  display: flex;
+  flex-direction: column; /* Align elements vertically */
+  justify-content: flex-start; /* Align elements to the top */
+  align-items: flex-start; /* Align elements to the left */
+  text-align: left; /* Align text to the left */
+  padding: 0 20px; /* Add some padding for better spacing */
+  z-index: 2;
+  margin-top: -40px;
+  font-family: "Cake Sans", sans-serif; /* Specify font family properly */
+}
+
+/* Header Title Styles */
+.head {
+  font-size: 3rem; /* Adjust font size as needed */
+  color: #fff;
+  font-weight: bold;
+  margin-top: -200px; /* Remove negative margin */
+  padding: 0;
+  margin-left: 15%;
+  text-align: left; /* Align text to the left */
+  z-index: 2;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff5733;
+}
+
+/* Overlay Text Styles */
+.overlay {
+  position: absolute;
+  top: 40%;
+  margin-left: 5%; /* Align to the left */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 2;
+  margin-right: 10%;
+  width: auto; /* Adjust width if needed */
+}
+.hero-latest-btn:hover {
+  color: #fff;
+  background-color: #0056b3;
+}
+.overlay-text {
+  font-size: 2rem; /* Adjust font size as needed */
+  color: #fff;
+  font-weight: bolder;
+  font-family: "Cake Sans", sans-serif; /* Specify font family properly */
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Align text to the left */
+}
+
+/* Button Wrapper Styles */
+.button-wrapper {
+  margin-top: 200px;
+  margin-left: 70px;
+  z-index: 2;
+}
+
+/* Canvas Styles */
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Behind other elements */
+}
+
+/* Full Button Styles (Optional) */
+.btn {
+  margin-top: 30%;
+  margin-left: -20%;
+  padding: 15px 15px; /* Adjust button padding */
+  background-color: #6f3d16; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem; /* Adjust font size as needed */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .head {
+    font-size: 2.5rem;
+  }
+
+  .overlay-text {
+    font-size: 1.75rem; /* Adjust for laptops */
+  }
+}
+
+@media (max-width: 900px) {
+  .head {
+    font-size: 2rem;
+  }
+
+  .overlay-text {
+    font-size: 1.5rem; /* Adjust for tablets */
+  }
+
+  .button-wrapper {
+    margin-top: 1.5rem; /* Adjust spacing for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    font-size: 1.75rem;
+  }
+
+  .overlay-text {
+    font-size: 1.25rem;
+    margin-bottom: 70px; /* Adjust for smaller screens */
+  }
+
+  .button-wrapper {
+    margin-left: 20px;
+    margin-top: 90%; /* Adjust spacing for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+    font-size: 1.5rem;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+    margin-bottom: 70px; /* Adjust for very small screens */
+  }
+
+  .button-wrapper {
+    margin-left: 20px;
+    margin-top: 90%; /* Adjust spacing for very small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .head {
+    font-size: 1.25rem;
+    margin-top: -50px;
+  }
+
+  .overlay-text {
+    font-size: 0.875rem;
+    margin-bottom: 70px;
+  }
+
+  .button-wrapper {
+    margin-top: 90%;
+    margin-left: 20px;
+  }
+}
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background: #674188;
+  /* rgb(102, 244, 147); */
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  animation: fadeInUp 2s ease-in-out;
+  text-decoration: none;
+  margin-top: 75%;
+  margin-left: 20%;
+}

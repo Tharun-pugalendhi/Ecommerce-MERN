@@ -1,0 +1,186 @@
+.dealer-container {
+  padding: 20px;
+  background: #f7efe5;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for dealer dropdown */
+.dealer-dropdown {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for the dealer dropdown */
+.dealer-dropdown select {
+  padding: 10px 20px;
+  width: 400px;
+  border: 2px solid #674188;
+  background-color: #fff;
+  color: #674188;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dealer-dropdown select:focus {
+  outline: none;
+
+  border-color: #674188;
+}
+
+/* Container for the products list */
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style for each product card */
+.product-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for product image */
+.product-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+/* Container for product details */
+.product-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for product name */
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style for product price */
+.product-price {
+  font-size: 16px;
+}
+
+/* Table styling for additional product info */
+.product-box {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  background-color: #c8a1e0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-box td {
+  padding: 10px;
+  row-gap: 50px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.product-totalprice .price {
+  font-weight: bold;
+}
+
+/* Summary section for total products and price */
+.total-summary {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #674188;
+}
+
+/* Container for cart items list */
+.cart-items-list {
+  margin-top: 20px;
+}
+
+/* Style for each cart item */
+.cart-item {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for cart item image */
+.cart-item-image {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+/* Container for cart item details */
+.cart-item-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for cart item name */
+.cart-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style for cart item username */
+.cart-item-username {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Style for cart item quantity */
+.cart-item-quantity {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Style for cart item total price */
+.cart-item-totalprice {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Style for cart item date */
+.cart-item-date {
+  font-size: 14px;
+  color: #555;
+}

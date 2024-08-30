@@ -1,0 +1,170 @@
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  height: 70px;
+  background-color: #ebd3f8;
+  /* background: linear-gradient(
+    60deg,
+    rgba(226, 236, 178, 1) 0%,
+    rgba(38, 202, 82, 1) 100%
+  ); */
+  box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  border-radius: 15px;
+  width: 50px;
+}
+
+.admin-nav-menu-container {
+  display: flex; /* Default to flex for desktop view */
+}
+
+.admin-nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.admin-nav-menu li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  color: #171717;
+  transition: background-color 0.3s ease;
+}
+
+.admin-nav-menu li:hover,
+.admin-nav-menu li.active {
+  background-color: #b692c2;
+  color: white;
+  padding: 10px;
+}
+
+/* Hamburger Menu styles */
+.nav-dropdown {
+  display: none; /* Hide hamburger icon by default */
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-dropdown.open {
+  transform: rotate(0deg); /* Keep the icon unchanged */
+}
+
+/* Login & Cart styles */
+.admin-nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.admin-nav-login-cart button {
+  width: 130px;
+  height: 45px;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+}
+
+.admin-nav-login-cart button:active {
+  background: #f3f3f3;
+}
+
+/* User Menu styles */
+.user-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.user-menu-visible .user-menu-dropdown {
+  display: block;
+}
+
+.user-menu-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.user-menu-dropdown button:hover {
+  background-color: #f4f4f4;
+}
+
+/* Responsive styles */
+@media (max-width: 750px) {
+  .admin-nav-menu-container {
+    display: none; /* Hide menu container on mobile */
+  }
+
+  .admin-nav-menu-container.admin-nav-menu-visible {
+    display: block; /* Show menu container when toggled */
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9; /* Ensure menu is above other content */
+  }
+
+  .nav-logo img {
+    margin-left: -50px;
+  }
+
+  .admin-logout-button {
+    margin-right: -40px;
+  }
+
+  .nav-dropdown {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .admin-nav-menu {
+    flex-direction: column; /* Display menu items vertically on mobile */
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+  }
+
+  .admin-nav-login-cart {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .admin-navbar .admin-user-button {
+    display: none; /* Hide the username button on mobile */
+  }
+}

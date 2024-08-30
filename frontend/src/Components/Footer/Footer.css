@@ -1,0 +1,270 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.footer-section {
+  background: #ebd3f8;
+  /* linear-gradient(
+      60deg,
+      rgba(226, 236, 178, 1) 0%,
+      rgba(38, 202, 82, 1) 100%
+    ); */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+  width: 100%;
+}
+
+.cta-row {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.single-cta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.single-cta i {
+  color: #674188;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #171717;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-widget {
+  flex: 1;
+  min-width: 250px;
+
+  margin: 20px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+  display: flex;
+  margin-top: -70px;
+  justify-content: center;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #171717;
+  line-height: 28px;
+}
+
+.footer-social-icon {
+  margin-bottom: 20px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  background: #171717;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg:hover {
+  background: #3b5998;
+}
+
+.twitter-bg:hover {
+  background: #55acee;
+}
+
+.google-bg:hover {
+  background: #dd4b39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #674188;
+  transform: translateX(-50%);
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.useful-links {
+  display: flex;
+  margin: 10px;
+  /* margin-left: 120px; */
+  flex-direction: column;
+}
+
+.useful-links li {
+  margin-bottom: 12px;
+}
+
+.useful-links li a {
+  color: #171717;
+  text-transform: capitalize;
+}
+
+.useful-links li a:hover {
+  color: #674188;
+  /* darkgreen; */
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  /* background: goldenrod; */
+  background: whitesmoke;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #674188;
+  /* green; */
+  padding: 13px 20px;
+  border: 1px solid darkgreen;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  /* background: goldenrod; */
+  background: #674188;
+  padding: 25px;
+  width: 100%;
+}
+
+.copyright-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.copyright-text {
+  color: #f7efe5;
+  font-size: 14px;
+}
+
+.copyright-text p {
+  margin: 0;
+  display: flex;
+  margin-left: 50px;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+}
+
+.footer-menu {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+
+.footer-logo {
+  height: 100px;
+}
